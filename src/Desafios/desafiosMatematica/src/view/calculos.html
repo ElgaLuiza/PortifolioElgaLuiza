@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/viewStyle.css">
+        <!-- <script src="../src/js/calculos.js"></script> -->
+		<title> Cálculos </title>
+       
+<!--	
+        Calcule a soma de todos os números entre 1 e 100.
+        Calcule a média entre todos os números entre 1 e 100.
+        Calcule a soma de todos os números pares entre 1 e 100.
+        Calcule a soma de todos os números ímpares entre 1 e 100.
+-->
+    </head>
+    <body>
+        <h2>Cálculos Matemáticos Simples</h2> <br>
+        <div id="div1">
+            <!--    Calcule a soma de todos os números entre 1 e 100. -->
+            <script>
+                var soma=0
+                for (var i=0; i<=100; i++){
+                    soma+=i;
+                 }
+                window.document.writeln("<br>", "  Soma de 1 a 100: ", soma);  
+            </script>
+        </div>
+        <div id="div2">
+            <!--    Calcule a média entre todos os números entre 1 e 100. -->
+            <script>
+                var media = (soma/100);
+                window.document.writeln("<br>", " Média de 1 a 100: ", media); 
+            </script>
+        </div>
+        <div id="div3">
+            <!--    Calcule a soma de todos os números pares entre 1 e 100. -->
+            <script>
+                var soma=0;
+                var par=0;
+                for (var i=1; i<=100; i++){
+                    par=i%2;
+                    if (par == 0){
+                        soma+=i;
+                    }
+                 }
+                window.document.writeln("<br>" ,"  Soma Pares entre 1 e 100: ", soma); 
+            </script>
+        </div>
+        <div id="div4">
+            <!--    Calcule a soma de todos os números ímpares entre 1 e 100. -->
+            <script>
+                var soma=0;
+                var par=0;
+                for (var i=1; i<=100; i++){
+                    par=i%2;
+                    if (par == 1){
+                        soma+=i;
+                    }
+                 }
+                window.document.writeln("<br>" ,"  Soma Ímpares entre 1 e 100: ", soma); 
+            </script>
+        </div>
+
+        <footer>
+            <br><br>
+                <a href="../../index.html">
+                    <img src="../img/left_voltar.png" alt="Voltar" style="width:30px; height:30px";>
+                </a><br><br>
+          </footer>
+           
+    </body>    
+</html>

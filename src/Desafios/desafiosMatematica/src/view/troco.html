@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/viewStyle.css">
+		<title> Troco </title>
+       
+ <!--        /*  Será solicitado duas entradas de dados, dois valores de pontos flutuantes, 
+        um para o valor do produto e outro para o valor que foi pago.
+        após retornar na tela o valor do troco. 
+        O retorno deverá ser informado com um R$ à frente do valor retornado, 
+        também deverá ser inserido na frente da mensagem de retorno  
+        "Seu troco é : "  e ao final da mensagem 
+        "Muito obrigado e volte sempre.". 
+    */ -->
+		<script>
+
+/* valor_produto = readlineSync.question("Digite o valor do produto: ");
+valor_pago = readlineSync.question("Digite o valor pago: ");
+console.log("seu troco é: R$", (parseFloat(valor_pago - valor_produto)), "  Muito Obrigado e volte sempre.");
+ */
+            valor_produto=window.prompt ("Digite o valor do produto: ");   
+            valor_pago=window.prompt ("Digite o valor pago: ");
+            troco=(parseFloat(valor_pago - valor_produto));
+            window.document.writeln("Seu troco é: R$ ", troco, "   -   ", "  Muito Obrigado e volte sempre.");
+            
+		</script>
+    </head>
+    <body>
+        <form action="Meu Form" method="post">
+            <header></header>
+            
+			<main></main>
+        </form>
+        <footer>
+            <br><br>
+                <a href="../../index.html">
+                    <img src="../img/left_voltar.png" alt="Voltar" style="width:30px; height:30px";>
+                </a><br><br>
+          </footer>
+    </body>    
+</html>

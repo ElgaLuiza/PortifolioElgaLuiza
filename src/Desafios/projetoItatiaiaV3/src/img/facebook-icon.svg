@@ -1,0 +1,8 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.73" height="10.824" viewBox="0 0 5.73 10.824">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Facebook" d="M3.72,10.824V5.887H5.409l.253-1.925H3.72V2.734c0-.557.157-.937.972-.937H5.73V.075A14.349,14.349,0,0,0,4.217,0,2.341,2.341,0,0,0,1.694,2.543V3.963H0V5.887H1.694v4.937Z" fill="#ff173e"/>
+    </clipPath>
+  </defs>
+  <path id="Facebook-2" data-name="Facebook" d="M3.72,10.824V5.887H5.409l.253-1.925H3.72V2.734c0-.557.157-.937.972-.937H5.73V.075A14.349,14.349,0,0,0,4.217,0,2.341,2.341,0,0,0,1.694,2.543V3.963H0V5.887H1.694v4.937Z" transform="translate(0 0)" fill="#ff173e"/>
+</svg>

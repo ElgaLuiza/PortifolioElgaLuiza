@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/viewStyle.css">
+        <title> Faixa Etária </title>
+       
+<!--	
+        Solicita idade e classifica em:
+             criança (0 a 12)
+             adolescente (13 a 20)
+             adulto (21 a 50)
+             idoso (acima de 50)
+-->
+    </head>
+    <body>
+        <h2>Classifica em Faixa Etária</h2>
+        <h3>
+            <script>
+                var idade=0;
+                idade=window.prompt ("Digite sua idade: ", "digite a idade ");
+
+                if (idade <=12){
+                    window.document.writeln ("Idade = ", idade, " anos ", " <br><br> ");
+                    window.document.writeln(" Criança ");
+
+                } else if (idade >= 13 && idade <= 20){
+                    window.document.writeln ("Idade = ", idade, " anos ", " <br><br> ");
+                    window.document.writeln(" Adolescente ");
+
+                } else if(idade >= 21 && idade <= 50){
+                    window.document.writeln ("Idade = ", idade, " anos ", " <br><br> ");
+                    window.document.writeln(" Adulto ");
+
+                } else {
+                    window.document.writeln ("Idade = ", idade, " anos ", " <br><br> ");
+                    window.document.writeln(" Idoso ");
+                }
+
+            </script>
+          </h3>  
+          <footer>
+            <br><br>
+                <a href="../../index.html">
+                    <img src="../img/left_voltar.png" alt="Voltar" style="width:30px; height:30px";>
+                </a><br><br>
+          </footer>
+    </body>    
+</html>

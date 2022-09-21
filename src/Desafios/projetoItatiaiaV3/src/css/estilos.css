@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button, [type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+p {
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: "Josefin Sans";
+  /*    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;*/
+} /*# sourceMappingURL=reset.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  /*    border: 2px solid red; */
+  gap: 3px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.container div {
+  padding: 4px;
+  font-size: 10pt;
+  /* border: 1px solid blue; */
+}
+
+#noticia {
+  padding: 0%;
+  font-size: 22pt;
+  color: black;
+}
+
+#subChamada {
+  color: brown;
+  font-size: 7pt;
+}
+
+#subChamada2 {
+  font-size: 8pt;
+  border-left: 3px solid brown;
+  padding: 3px;
+}
+
+#subChamada3 {
+  font-size: 7pt;
+  /*border-left: 3px solid rgb(66, 138, 100);*/
+  border-left: 3px solid rgb(93, 206, 168);
+  color: rgb(93, 206, 168);
+  padding: 3px;
+}
+
+#img {
+  border-radius: 10px;
+  max-width: 100%;
+  background-size: cover;
+}
+
+#noticiaSecundaria {
+  font-size: 16pt;
+  border-bottom: 1px solid gray;
+  color: rgb(255, 0, 128);
+  /*border-bottom: 2px solid rgb(255, 0, 128);*/
+}
+
+#faixaFinal {
+  background-color: rgb(255, 23, 62);
+  height: 80px;
+  vertical-align: baseline;
+  color: white;
+  padding-top: 10px;
+}
+
+#textoFinal {
+  font-size: 9pt;
+}
+
+.compartilha {
+  display: inline-block;
+}
+
+#linha {
+  border-bottom: 1px solid gray;
+}
+
+a {
+  color: black;
+}
+
+#tituloEntretenimento {
+  color: #FFB829;
+}
+
+#faleConosco {
+  background-color: #ddd;
+  height: 80px;
+  text-align: center;
+}
+
+#municipio {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#social {
+  display: inline-block;
+  text-align: center;
+  background-color: #ddd;
+  word-spacing: 10px;
+}
+
+#social a:hover {
+  color: red;
+}/*# sourceMappingURL=estilos.css.map */

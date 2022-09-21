@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/viewStyle.css">
+        <title> Título </title>      
+
+    </head>
+    <body>
+        <h2> 3 Números em Ordem Decrescente </h2>
+        <div> <form>
+                <label for="num1"> Primeiro número: </label><br>
+                <input id="num1" name="num1" type="number"><br>
+
+                <label for="num2"> Segundo número: </label><br>
+                <input id="num2" name="num2" type="number"><br>
+
+                <label for="num3"> Terceiro número: </label><br>
+                <input id="num3" name="num3" type="number"><br>
+
+                <input type="submit" value="Exibir ordem decrescente" onclick="decrescente()">
+                <input type="reset" value="Limpar">
+            </form>
+         </div>
+        <script> 
+            function decrescente(){
+                var num1 = document.getElementById("num1").value;   
+                var num2 = document.getElementById("num2").value;
+                var num3 =  document.getElementById("num3").value;
+                var aux = 0;
+
+                if (num2 > num1){
+                    aux = num2;
+                    num2 = num1;
+                    num1 = aux;
+                } 
+
+                if (num3 > num1){
+                    aux = num3;
+                    num3 = num1;
+                    num1 = aux;
+                }
+
+                if (num3 > num2){
+                    aux = num3;
+                    num3 = num2;
+                    num2 = aux;
+                }
+                alert(num1+"-"+num2+"-"+num3);
+            }
+        </script> 
+        
+        <footer>
+            <br><br>
+                <a href="../../index.html">
+                    <img src="../img/left_voltar.png" alt="Voltar" style="width:30px; height:30px";>
+                </a><br><br>
+          </footer>
+    </body>    
+</html>

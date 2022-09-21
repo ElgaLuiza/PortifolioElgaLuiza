@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/viewStyle.css">
+        <title> Cálculo Custo Carro </title>
+        <!-- <script type="text/javascript" src="/calculo_custo_carro/src/js/calc_custo_carro.js" ></script>  -->
+    </head>
+    <body>
+        <h1> Cálculo do custo de Veículos </h1>
+        <div class="formato">
+            <h2>
+               <script>
+                    var custo_fabrica = 0;
+                    var distribuidor = 0;
+                    custo_fabrica = window.prompt ("Digite o valor de fábrica do veículo: ");
+                    imposto = parseFloat(custo_fabrica * 0.45);
+                    window.document.writeln("Custo de Fábrica do Veículo: R$", custo_fabrica, "<br><br>");
+                    custo_com_imposto = parseFloat(custo_fabrica)+ (parseFloat(imposto));
+                    window.document.writeln("Custo dos impostos: R$", imposto, "<br><br>");
+                    distribuidor = parseFloat(custo_com_imposto * 0.28);
+                    window.document.writeln("Custo do Distribuidor: R$", parseInt(distribuidor), "<br><br>");
+                    custo_final_veiculo = (parseFloat(custo_com_imposto) + (parseFloat(distribuidor)));                 
+                    window.document.writeln("Custo Final do Veículo: R$", custo_final_veiculo);
+                </script> 
+            </h2>
+        </div>
+      <footer>
+        <br><br>
+            <a href="../../index.html">
+		        <img src="../img/left_voltar.png" alt="Voltar" style="width:30px; height:30px";>
+	        </a><br><br>
+      </footer> 
+    </body>    
+</html>

@@ -1,0 +1,57 @@
+Calculadora de IMC (e peso ideal)
+
+	 Criar uma calculadora para medir o indice de massa corpórea 
+de um indivíduo, 
+o sistema deve solicitar a entrada de  dois valores altura e peso, 
+e fazer o cálculo . 
+	O cálculo do IMC é feito usando a seguinte fórmula matemática: 
+Peso ÷ (altura x altura).como entrada pode ser usado o window.prompt 
+e a apresentação do resultado o window.document.writeln.
+
+-----------------------------------------------------------------
+ fórmula: IMC = peso / (altura x altura).
+ MC (kg/m2)	Classificação
+Menor que 18,5	Magreza
+18,5 a 24,9	Normal
+25 a 29,9	Sobrepeso
+30 a 34,9	Obesidade grau I
+35 a 39,9	Obesidade grau II
+Maior que 40	Obesidade grau III
+
+
+
+
+ - 1° passo solicitar ao usuário informar o peso e a altura;
+	Criar dois inputs; ok
+ - 2º calculo do IMC;
+	- criar uma váriavel para receber o valor do imc; ok
+	- criar uma váriavel para receber o valor do peso; ok
+ 	- criar uma váriavel para receber o valor da altura; ok
+        - atribuir à váriavel "imc" o seguinte resultado : ok
+		peso / (altura x altura).
+ - 3° informar de acordo com a tabela previamente informada o resultado.
+	- criar uma váriavel com o texto da classificação;ok	
+	- de acordo com a váriavel "imc" testar qual a faixa 
+	  de classificação;ok
+	- atribuir à faixa de classificação + a váriavel "imc" 
+          à váriavel de texto criada;ok
+	- criar uma tag para retorno. ok
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

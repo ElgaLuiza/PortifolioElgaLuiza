@@ -1,0 +1,208 @@
+<!DOCTYPE  html>
+<html lang="pt-br">
+	<head>
+		<title> Projeto Itatiaia </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../src/css/estilos.css">
+        <link rel="stylesheet" href="../src/css/estiloMenuHoverItatiaia.css">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    </head>
+
+	<body>
+        <header>	
+            <div class="row">
+                <div class="col">					
+                    <div class="dropdown">
+                        <div class="icone_botao_rosa">
+                            <img id="iconeMenuRosa" src="../src/img/toggle-buttonItatiaia.svg" alt="Imagem Menu" width="35px" > 
+                            <button class="dropbtn"> Menu </button>
+                        </div>
+                        
+                        <div class="dropdown-content">
+                        
+                            <div class="tab">
+                                <button class="tablinks" onmouseover="openCity(event, 'radio')"> A Rádio </button>
+                                <button class="tablinks" onmouseover="openCity(event, 'esportes')"> Esportes </button>
+                                <button class="tablinks" onmouseover="openCity(event, 'editorias')"> Editorias </button>
+                                <button class="tablinks" onmouseover="openCity(event, 'colunas')"> Colunas </button>
+                                <button class="tablinks" onmouseover="openCity(event, 'itacast')"> Itacast </button>
+                                <button class="tablinks" onmouseover="openCity(event, 'mais')"> Mais </button>
+                            </div>
+        
+                            <div id="radio" class="tabcontent">
+                                <h3> A Rádio </h3>
+                                <a href="#">Quem Somos</a><br><br>
+                                <a href="#">Memória Itatiaia</a><br><br>
+                                <a href="#">Troféu Guará</a><br><br>
+                                <a href="#">Programação</a><br>
+                            </div>
+        
+                            <div id="esportes" class="tabcontent">
+                                <h3> Times </h3>
+                                <a href="https://www.itatiaia.com.br/america"><img id="logoTime" src="../src/img/logoAmerica.png" alt="América" width="30px"></a>
+                                <a href="https://www.itatiaia.com.br/atletico"><img id="logoTime" src="../src/img/logoAtletico.png" alt="Atlético" width="42px"></a>
+                                <a href="https://www.itatiaia.com.br/cruzeiro"><img id="logoTime" src="../src/img/logoCruzeiro.png" alt="Cruzeiro" width="40px"></a>
+                            
+                                <h3> Notícias </h3>
+                                <a href="#"> Últimas Notícias </a>
+        
+                                <h3> Tabelas </h3>
+                                <a href="#"> Tabela Brasileiro Série A </a> <br>
+                                <a href="#"> Tabela Brasileiro Série B </a>  
+                            </div>
+        
+                            <div id="editorias" class="tabcontent">
+                                <h3> Editorias </h3>
+                                <a href="#"> Brasil </a><br><br>
+                                <a href="#"> Cidades </a><br><br>
+                                <a href="#"> Entretenimento </a><br><br>
+                                <a href="#"> Esportes </a><br><br>
+                                <a href="#"> Mundo </a><br><br>
+                                <a href="#"> Política </a><br><br>
+                            </div>
+        
+                            <div id="colunas" class="tabcontent">
+                                <h3> Colunistas </h3>
+                                <a href="#"> Eduardo Costa </a><br><br>
+                                <a href="#"> Alexandre Simões </a><br><br>
+                                <a href="#"> Léo Figueiredo </a><br><br>
+                                <a href="#"> Edilene Lopes </a><br><br>
+                                <a href="#"> Lucas Ragazzi </a><br><br>
+                                <a href="#"> Wellington Campos </a><br><br>
+                            </div>
+        
+                            <div id="itacast" class="tabcontent">
+                                <h3> Itacast </h3>
+                                <a href="#"> Abrindo o Jogo </a><br><br>
+                                <a href="#"> Por Tudo </a><br><br>
+                                <a href="#"> Observatório Feminino </a><br><br>
+                                <a href="#"> Conversa de Redação </a><br><br>
+                                <a href="#"> Todo esporte </a><br><br>        
+                            </div>
+        
+                            <div id="mais" class="tabcontent">
+                                <h3> Mais </h3>
+                                <a href="#"> Central de Áudios </a><br><br>
+                                <a href="#"> Oração do Dia </a><br><br>      
+                                <a href="https://oldportal.itatiaia.com.br/central-de-audio/7/horoscopo"> Horóscopo </a><br><br>        
+                            </div>			
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <img id="logoBlack" src="../src/img/itatiaia-logo-black.svg" alt="Logotipo Escuro" width="100px">
+                </div>
+    
+                <div class="col-2">
+                    <img id="logoLupa" src="../src/img/search-icon-itatiaia.svg" alt="Buscar"> 
+                <p id="lupa"> Buscar </p>
+                </div>	
+                
+            </div>						
+        </header>
+        <hr>
+	<script>
+		function openCity(evt, cityName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the link that opened the tab
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+	</script>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-8">
+                    <h2>Peru aumenta capacidade de visitantes em santuário inca de Machu Picchu</h2>
+                    <h6>Na versão de familiares, a vítima estava desarmada; já a porta-voz da PMMG afirma que Marcos Couto resistiu à abordagem. Promotoria de Justiça de Contagem vai investigar morte</h6>
+                </div>                    
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <p class="font-weight-bold">Por Lucas Sanches</p>
+                    <p class="font-weight-light">07/07/2022 às 15:51</p>                        
+                </div>   
+                    
+                <div class="col-8">                        
+                    <p class="compartilha">Compartilhar</p>                              
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>                        
+                    </div>
+                </div>    
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <p id="linha"> </p>
+                </div>
+            </div>        
+            
+            <div class="row">
+                <div class="col-8">
+					<figure class="figure">
+						<img id="img" src="../src/img/machu-pichu.png" alt= "imagem" class="figure-img img-fluid rounded">
+						<figcaption class="figure-caption"> Machu Pichu: uma viagem pra lá de espiritual. Conheça. </figcaption>
+					</figure>                    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <p class="text-justify">A porta-voz diz ainda que Marcos resistiu à abordagem e, como várias pessoas se aglomeraram no local, os militares tentaram levar o suspeito para uma ‘área de segurança, mais tranquila’.<br>
+
+
+                        A major Layla Brunella, porta-voz da Polícia Militar de Minas, reafirmou que Marcos reagiu e levou a mão na direção da arma do militar. O PM que atirou foi levado para o 39º Batalhão e está à disposição da Justiça Militar.
+                        
+                        “Ele se nega, começa a se tornar um abordado desobediente. Sendo assim, um dos nossos policiais militares pega ele pela camisa para conduzi-lo para essa área de segurança. <br>
+                        Durante essa condução, ele reage e tira a mão da cabeça e leva a mão próximo ao rosto do policial militar e próximo ao armamento, na tentativa de arrebatar esse armamento", justifica. <br>
+                        
+                        
+                        Segundo o policial militar, devido à reação do autor, "que já estava apresentando toda essa alteração anterior e com a possibilidade de estar armado, ele efetua disparos de arma de fogo para salvaguardar a própria vida e evitar que ele arrebate a arma de fogo”.
+                        
+                        No entanto, vídeos que circulam nas redes sociais mostram o policial levando o homem para trás de uma Kombi e atirando.</p>
+
+                </div>                    
+            </div>
+
+
+            <div class="row" id="faixaFinal">
+                <div class="col-2">
+                  <img id="logoBranco" src="../src/img/itatiaia-logo-white.svg" alt="Logotipo Branco">
+                </div>
+                <div class="col-4" id="textoFinal"> Todos os direitos reservados  © 2022 Itatiaia. </div>
+                <div class="col-3" id="textoFinal"> Política de Privacidade </div>
+                <div class="col-2" id="textoFinal"> Notas Legais </div>
+                <div class="col-1">
+                  <img id="logoBranco" src="../src/img/quarteldesign.png" alt="Logotipo Quartel Design">
+                </div>
+              </div>  
+            
+        </div>
+    </body>
+</html>
