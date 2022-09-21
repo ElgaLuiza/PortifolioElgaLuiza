@@ -1,0 +1,20 @@
+{
+  "name": "api_restfull_db",
+  "version": "1.0.0",
+  "description": "Projeto Convidados - Banco de Dados",
+  "main": "./src/js/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./src/js/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ElgaLuiza",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.8.0"
+  }
+}
