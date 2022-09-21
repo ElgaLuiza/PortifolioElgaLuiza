@@ -1,0 +1,52 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    border: 30px solid #ddd;
+    color: #ddd;
+}
+.bg-1 {
+    /*background-image: url("../img/o_fundovrde.jpg");
+    color: #474e5d;*/
+    background-color: #1abc9c; /* Green */   
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+h1{
+    line-height: 100px;    
+}
+h2 {
+    line-height: 100px;
+    color: rgb(219, 206, 179);
+}
+h3 {
+    line-height: 60px;    
+}
+h4 {
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgb(64, 169, 201);
+}
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */    
+}
+.bg-3 {
+    background-color: rgb(117, 124, 110); /* White */
+}
+.bg-4 {
+    background-color: rgb(118, 126, 113);
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+#social-container{
+    font-size: 20pt;
+}
