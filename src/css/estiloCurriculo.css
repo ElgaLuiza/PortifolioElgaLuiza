@@ -5,9 +5,10 @@
 .bg-1 {
     background-color: black;
     color: #ddd;
-    height: 100vh;
+    height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .bg-2{
     display: grid;
@@ -19,10 +20,12 @@
     width: 80%;
 }
 .bg-3 {
-    background-color: black;
-    color: #ddd;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
+    display:grid;
+    row-gap: 4px;
+    max-width: fit-content;
 }
 .album{
     text-align: center;
@@ -59,11 +62,18 @@ h5{
     margin-top: 20px;
     
 }
-.meuNome{   
+.meuNome {   
     text-align: center; 
     padding: 20px;
     border:1px solid rgb(118, 126, 113);
     border-radius: 10px;
+}
+.disciplina {   
+    text-align: center; 
+    padding: 20px;
+    border:1px solid rgb(42, 90, 180);
+    border-radius: 10px;
+    color:rgb(42, 90, 180);
 }
 
  
